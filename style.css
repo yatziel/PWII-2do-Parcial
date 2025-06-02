@@ -86,3 +86,33 @@ h1 {
   color: whitesmoke;
   background-color: rgba(54, 17, 17, 0.618);
 }
+
+/* Pantallas de max-width: 1023px */
+
+@media screen and (max-width: 1023px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em;
+  }
+
+  .pokemon {
+    padding: 1.2em;
+    gap: 0.75em;
+  }
+}
+
+/* Pantallas de max-width: 435px */
+
+@media screen and (max-width: 435px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0.2em;
+  }
+  .pokemon {
+    padding: 1em;
+    gap: 0.5em;
+  }
+  .pokemon-powers {
+    gap: 0.2em;
+  }
+}
